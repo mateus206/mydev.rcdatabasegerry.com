@@ -1,8 +1,8 @@
-CREATE DATABASE IF NOT EXISTS rcdatabasegerry
+CREATE DATABASE IF NOT EXISTS RC_database
 CHARACTER SET utf8mb4
 COLLATE utf8mb4_unicode_ci;
 
-USE rcdatabasegerry;
+USE RC_database;
 
 CREATE TABLE IF NOT EXISTS utilizadores (
     id INT AUTO_INCREMENT PRIMARY KEY,

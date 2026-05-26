@@ -102,7 +102,7 @@ async function guardarCliente(e) {
     formData.append("telefone", telefone);
     formData.append("morada", morada);
 
-    const url = id ? "../api/editar_clientes.php" : "../api/criar_clientes.php";
+    const url = id ? "../api/editar_cliente.php" : "../api/criar_cliente.php";
 
     try {
         const resposta = await fetch(url, {
@@ -149,7 +149,7 @@ async function apagarCliente(id) {
     formData.append("id", id);
 
     try {
-        const resposta = await fetch("../api/apagar_clientes.php", {
+        const resposta = await fetch("../api/apagar_cliente.php", {
             method: "POST",
             body: formData
         });
@@ -170,7 +170,8 @@ async function apagarCliente(id) {
 async function logout() {
     try {
         await fetch("../api/logout.php");
-    } catch (erro) {}
+    } catch (erro) {
+    }
 
     window.location.href = "index.html";
 }

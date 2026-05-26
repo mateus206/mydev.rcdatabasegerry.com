@@ -3,7 +3,7 @@
 $host = "localhost";
 $dbname = "RC_database";
 $username = "root";
-$password = "";
+$password = "1234";
 
 try {
     $pdo = new PDO(
